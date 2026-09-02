@@ -10,3 +10,7 @@ class Student(ABC):
 
     def get_roll_no(self):
         return self.__roll_no
+    
+    @abstractmethod
+    def display_info(self):
+        pass
