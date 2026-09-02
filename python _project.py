@@ -36,10 +36,10 @@ class CollegeStudent(Student):
 
 
 
-s_student1 = SchoolStudent("Rahul Sharma", 101, "10th Standard")
-s_student2 = SchoolStudent("Priya Verma", 102, "12th Standard")
-c_student1 = CollegeStudent("Aman Gupta", 501, "Computer Science")
-c_student2 = CollegeStudent("Neha Singh", 502, "Information Technology")
+s_student1 = SchoolStudent("Rahul Sharma", 20, "10th Standard")
+s_student2 = SchoolStudent("Shaurya Verma", 10, "11th Standard")
+c_student1 = CollegeStudent("Aman Gupta", 30, "CSE")
+c_student2 = CollegeStudent("Neha Singh", 40, "CSIT")
 
 
 students_list = [s_student1, s_student2, c_student1, c_student2]
