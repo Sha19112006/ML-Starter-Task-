@@ -15,7 +15,19 @@ class Student(ABC):
     def display_info(self):
         pass
 
-    class SchoolStudent(Student):
-     def __init__(self, name, roll_no, school_class):
+class SchoolStudent(Student):
+    def __init__(self, name, roll_no, school_class):
         super().__init__(name, roll_no)
         self.school_class = school_class
+
+    def display_info(self):
+        print(f"[School Student] Name: {self.get_name()}, Roll No: {self.get_roll_no()}, Class: {self.school_class}")    
+
+class CollegeStudent(Student):
+    def __init__(self, name, roll_no, branch):
+        # Call parent constructor
+        super().__init__(name, roll_no)
+        self.branch = branch
+
+    def display_info(self):
+        print(f"[College Student] Name: {self.get_name()}, Roll No: {self.get_roll_no()}, Branch: {self.branch}")
