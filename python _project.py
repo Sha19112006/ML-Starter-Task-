@@ -36,5 +36,13 @@ class CollegeStudent(Student):
 
 
 
-student1 = SchoolStudent("Rahul Sharma", 101, "10th Standard")
-student2 = SchoolStudent("Priya Verma", 102, "12th Standard")
+s_student1 = SchoolStudent("Rahul Sharma", 101, "10th Standard")
+s_student2 = SchoolStudent("Priya Verma", 102, "12th Standard")
+c_student1 = CollegeStudent("Aman Gupta", 501, "Computer Science")
+c_student2 = CollegeStudent("Neha Singh", 502, "Information Technology")
+
+
+students_list = [s_student1, s_student2, c_student1, c_student2]
+print("--- Student Details System ---")
+for student in students_list:
+    student.display_info()
