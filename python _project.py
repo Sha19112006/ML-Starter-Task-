@@ -31,3 +31,10 @@ class CollegeStudent(Student):
 
     def display_info(self):
         print(f"[College Student] Name: {self.get_name()}, Roll No: {self.get_roll_no()}, Branch: {self.branch}")
+
+
+
+
+
+student1 = SchoolStudent("Rahul Sharma", 101, "10th Standard")
+student2 = SchoolStudent("Priya Verma", 102, "12th Standard")
