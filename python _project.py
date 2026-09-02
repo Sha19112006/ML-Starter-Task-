@@ -14,3 +14,8 @@ class Student(ABC):
     @abstractmethod
     def display_info(self):
         pass
+
+    class SchoolStudent(Student):
+     def __init__(self, name, roll_no, school_class):
+        super().__init__(name, roll_no)
+        self.school_class = school_class
